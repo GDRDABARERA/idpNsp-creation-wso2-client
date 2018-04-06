@@ -39,7 +39,7 @@ java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar $ADMIN_USER $
 
 As an example,Could you please refer below command
 
-java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ /home/siluni/issues/TRAVISPERKINSDEV-252/svnrepo/sp_idp/target/identity-provider.xml  /home/siluni/issues/TRAVISPERKINSDEV-252/isnode1/wso2is-5.3.0/repository/resources/security/client-truststore.jks  identity-provider.xml IDP wso2carbon Add
+java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ {path toidentity-provider.xml} /identity-provider.xml  {IS-home}/repository/resources/security/client-truststore.jks  identity-provider.xml IDP wso2carbon Add
 
 ------------------------------------------------------
 Update IDP
@@ -69,7 +69,7 @@ java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar $ADMIN_USER $
 
 As an example,Could you please refer below command
 
-java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ /home/siluni/issues/TRAVISPERKINSDEV-252/svnrepo/sp_idp/target/identity-provider.xml  /home/siluni/issues/TRAVISPERKINSDEV-252/isnode1/wso2is-5.3.0/repository/resources/security/client-truststore.jks  identity-provider.xml IDP wso2carbon Update WSO2IDP
+java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ {path toidentity-provider.xml} /identity-provider.xml  {IS-home}/repository/resources/security/client-truststore.jks  identity-provider.xml IDP wso2carbon Update WSO2IDP
 
 
 *You can use the similar way to create a SP. You need to have a service-provider.xml to create a SP
@@ -78,7 +78,7 @@ java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin l
 *In order to debug you can use a cpmmand "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"  infront of -jar similar to this
 
 
-*java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ /home/wso2dinali/Documents/IdpClient_version2_project/sp_idp/identity-provider.xml  /home/wso2dinali/SUPPORT/travispakin/isnode1/wso2is-5.3.0/repository/resources/security/client-truststore.jks identity-provider.xml IDP wso2carbon Add
+*java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ /{path toidentity-provider.xml} /identity-provider.xml  {IS-home}/repository/resources/security/client-truststore.jks identity-provider.xml IDP wso2carbon Add
 
 
 
