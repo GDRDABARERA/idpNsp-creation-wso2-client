@@ -72,13 +72,18 @@ As an example,Could you please refer below command
 java -jar  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ {path toidentity-provider.xml} /identity-provider.xml  {IS-home}/repository/resources/security/client-truststore.jks  identity-provider.xml IDP wso2carbon Update WSO2IDP
 
 
+
+------------------------------------------------------
+Creating a  SP
+-------------------------------------------------------
+
 *You can use the similar way to create a SP. You need to have a service-provider.xml to create a SP
 
 
 *In order to debug you can use a cpmmand "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"  infront of -jar similar to this
 
 
-*java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ /{path toidentity-provider.xml} /identity-provider.xml  {IS-home}/repository/resources/security/client-truststore.jks identity-provider.xml IDP wso2carbon Add
+*java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005  idpAndSPAutomate-1.0-SNAPSHOT-jar-with-dependencies.jar admin admin localhost https://localhost:9443/services/ /{path to service-provider.xml} /service-provider.xml  {IS-home}/repository/resources/security/client-truststore.jks service-provider.xml SP wso2carbon Add
 
 
 
